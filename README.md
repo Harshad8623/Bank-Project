@@ -33,10 +33,10 @@ The project performs essential banking operations and stores data securely in a 
 Bank-Project/
 │
 ├─ src/pk/
-│   ├─ BankSystem.java
-│   ├─ DatabaseConnection.java
+│ ├─ BankSystem.java
+│ ├─ DatabaseConnection.java
 │
-├─ README.md   ← (this file)
+├─ README.md ← (this file)
 
 
 
