@@ -1,65 +1,24 @@
-                WELCOME TO MY BANK PROJECT MADE BY HARSHAD MADHAV DHUPPE
-                    ROLL NO : 3145, PRN NUMBER : 23025331844046
-                CSMSS CHH. SHAHU COLLEGE OF ENGINEERING SAMBHAJINAGAR
+# Bank Management System — Java + MySQL
 
-# 🏦 Bank Management System (Core Java + MySQL)
+A learning project demonstrating core Java, JDBC, SQL queries and object-oriented programming through a basic bank-account workflow.
 
-This is a Java-based **Bank Management Project** built using **Core Java (OOP + JDBC + MySQL)**.  
-The project performs essential banking operations and stores data securely in a MySQL database.
+## Features documented in this project
 
----
+Account creation, account login, deposits, withdrawals and balance lookup.
 
-## 🚀 Features
-✔ Create New Bank Account  
-✔ Login to Account  
-✔ Deposit Amount  
-✔ Withdraw Amount  
-✔ Check Account Balance  
-✔ Transaction Security  
-✔ Stores all data in MySQL database using JDBC  
+## Technology
 
----
+Core Java, JDBC and MySQL.
 
-## 🛠️ Technologies Used
-| Component | Technology |
-|----------|-------------|
-| Programming Language | Java (Core Java + OOP) |
-| Database | MySQL |
-| Connectivity | JDBC |
-| IDE | Eclipse |
+## Local setup
 
----
+1. Create the MySQL database and table described in the application.
+2. Configure `DB_URL`, `DB_USER`, and `DB_PASSWORD` as environment variables; no database password is stored in the updated Java connection class.
+3. Add the MySQL JDBC connector to your Java classpath.
+4. Compile and run the Java entry point.
 
-Bank-Project/
-│
-├─ src/pk/
-│ ├─ BankSystem.java
-│ ├─ DatabaseConnection.java
-│
-├─ README.md ← (this file)
+## Limitations
 
+This is a **learning project**, not real banking software. The sample database design and authentication logic are not suitable for handling real financial accounts. Please review access control, password hashing, transaction handling and input validation before any broader use.
 
-
-
-
----
-
-## 🔧 MySQL Database Configuration
-Create a database and table before running the project:
-
-```sql
-CREATE DATABASE bankdb;
-USE bankdb;
-
-CREATE TABLE accounts (
-    acc_no INT PRIMARY KEY AUTO_INCREMENT,
-    name VARCHAR(50),
-    password VARCHAR(50),
-    balance DOUBLE
-);
-
-
-
-String url = "jdbc:mysql://localhost:3306/bankdb";
-String username = "root";
-String password = "#########";
+**Author:** [Harshad Madhav Dhuppe](https://github.com/Harshad8623)
